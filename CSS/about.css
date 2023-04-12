@@ -1,0 +1,43 @@
+body {
+    background-color: #1a0b2b;
+}
+
+.header-title {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.infoWrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+    justify-content: center;
+    height: auto; 
+}
+
+.infoText {
+    margin-right: 12rem;
+}
+
+/* .grid-container {
+  display:grid;
+} */
+
+.infoWrapper .infoText .text {
+  color: white;
+}
+
+.text {
+    /* grid-column-start: 1;
+    grid-column-end: 2; */
+    font-size: 1.5rem;
+    color: white;
+}
+
+#hackathonTeam {
+  /* grid-column-start: 2;
+  grid-column-end: 3; */
+  width: 50%;
+}
