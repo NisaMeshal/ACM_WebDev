@@ -3,21 +3,13 @@
     background-color: white;
 }
 
-.header-title {
-    font-size: 3rem;
-    text-align: center;
-}
-
 .event-title {
     font-size: 2rem;
     text-align: center;
 }
 
-.content-container {
-    display:flex;
-    flex-direction:row;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    padding-bottom: 3rem;
+.event-text {
+    flex-basis: 50%;
+    margin-right: 10rem;
+    padding: 2rem;
 }
