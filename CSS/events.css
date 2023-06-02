@@ -1,6 +1,6 @@
 .events {
-    color: #1a0b2b;
-    background-color: white;
+    background-color: #1a0b2b;
+    color: white;
 }
 
 .event-title {
@@ -10,6 +10,17 @@
 
 .event-text {
     flex-basis: 50%;
-    margin-right: 10rem;
-    padding: 2rem;
+    padding: 3rem;
+    text-decoration: none;
+    color: white;
+}
+
+.event-img {
+    width: 400px;
+}
+
+.event-logo {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    width: 200px;
 }
