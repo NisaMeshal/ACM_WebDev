@@ -7,6 +7,8 @@ in web development for club members and other Gonzaga CS students.
 We are currently using HTML, CSS, and JS for our project. However as the project grows, we anticipate the technology stack to grow with it as well. The website
 is currently hosted on a server at our university. 
 
+Web link: https://cs.gonzaga.edu/acm/
+
 Credits:
 Sam Carter,
 Kevin Dang,
