@@ -8,10 +8,10 @@ We are currently using HTML, CSS, and JS for our project. However as the project
 is currently hosted on a server at our university. 
 
 Credits:
-Sam Carter
-Kevin Dang
-Aidan Kaiser
-Abby Hidalgo
-Nisa Meshal
-Evan Shoemaker
+Sam Carter,
+Kevin Dang,
+Aidan Kaiser,
+Abby Hidalgo,
+Nisa Meshal,
+Evan Shoemaker,
 Jonathan Smoley
