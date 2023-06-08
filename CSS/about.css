@@ -11,24 +11,25 @@
 }
 
 #about-content {
-    display:flex;
-    flex-direction:row;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: auto;
+    margin-left: 5rem;
+    margin-right: 5rem;
 }
 
 #about-text {
-    flex-basis: 50%;
+    text-align: center;
     background-color: #121212;
-    margin: 5rem;
-    padding: 3rem;
+    padding: 2rem;
     border-radius: 10px;
+    max-width: 60rem;
+    min-width: 20rem;
 }
 
 #about-carousel {
-    flex-basis: 50%;
-    margin: 5rem;
+    padding: 3rem;
 }
 
 .about-img {
