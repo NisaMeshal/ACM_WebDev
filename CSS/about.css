@@ -1,7 +1,7 @@
 .about {
     background-color: #1a0b2b;
-        position: relative;
-        top: 100vh;
+    position: relative;
+    top: 100vh;
     color: white;
 }
 
@@ -10,26 +10,29 @@
     text-align: center;
 }
 
-.about-content {
+#about-content {
     display:flex;
     flex-direction:row;
     justify-content: center;
     align-items: center;
     height: auto;
-    padding-bottom: 3rem;
 }
 
-.about-text {
+#about-text {
     flex-basis: 50%;
-    margin-right: 10rem;
+    background-color: #121212;
+    margin: 5rem;
     padding: 3rem;
+    border-radius: 10px;
 }
 
-.about-carousel {
+#about-carousel {
     flex-basis: 50%;
+    margin: 5rem;
 }
 
 .about-img {
   display: none;
   width: 500px;
+  border-radius: 10px;
 }
