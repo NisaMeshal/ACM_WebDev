@@ -10,17 +10,20 @@
 
 .event-text {
     flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     padding: 3rem;
     text-decoration: none;
     color: white;
+    align-items: center;
 }
 
 .event-img {
-    width: 400px;
+    width: 25rem;
 }
 
 .event-logo {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    width: 200px;
+    width: 10rem;
 }
