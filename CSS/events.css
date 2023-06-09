@@ -29,6 +29,19 @@ html {
     color: white;
 }
 
+.leetcode {
+    flex-basis: 50%;
+    font-family: "Share Tech", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 2rem;
+    text-decoration: none;
+    color: white;
+    flex-wrap: wrap;
+}
+
 .event-img {
     width: 25rem;
 }
