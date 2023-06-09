@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Share+Tech&display=swap');
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
 .events {
     background-color: #1a0b2b;
+    font-family: "Share Tech", sans-serif;
     color: white;
 }
 
@@ -10,6 +19,7 @@
 
 .event-text {
     flex-basis: 50%;
+    font-family: "Share Tech", sans-serif;
     display: flex;
     align-items: center;
     justify-content: baseline;
