@@ -12,10 +12,12 @@
         <link rel="stylesheet" href="./CSS/landing_page.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@300;600&display=swap"
-            rel="stylesheet">
-        <script src="JS/carousel.js" defer></script>
-    </head>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./CSS/calendar.css">
+        <link rel="stylesheet" href="./CSS/evo-calendar.min.css">
+        <link rel="stylesheet" href="./CSS/evo-calendar.midnight-blue.min.css">   
+    </header>
 
     <body>
         <nav>
@@ -28,7 +30,6 @@
         </nav>
 
         <div class="landing">
-            <!-- <img src="Gonzaga_Bulldogs_logo.png" alt="Bulldog logo" style="width: 100px;"> -->
              <h1>
                  Gonzaga ACM 
              </h1>
@@ -36,9 +37,9 @@
                  Student Chapter
              </h2>
          </div>
-
-        <div class="about">
-            <h1 id="about-title" name="about-title">About</h1>
+    
+        <div class="abt">
+            <h1 id="about" class="header-title" name="about">About</h1>
             
             <div id="about-content">
                 <div id="about-text">
@@ -67,42 +68,59 @@
             </div>
         </div>
 
-        <div class="events" id="events">
-            <h1 id="about" class="header-title" name="about">Events</h1>
-            
-            <div class="content-container">
-                <div class="leetcode">
-                    <h3 class="event-title">Leetcode</h3>
-                    <div>
-                        We often do Leetcode problems together at our meetings. 
-                        Leetcode is an excellent way to improve the skills employers
-                        look for in technical interviews.
-                    </div>
-                </div>
-    
-                <div class="event-text">
-                    <h3 class="event-title">Hackathon</h3>
-                    <img class="event-logo" src="./images/pixel_pitbull.png" alt="GU ACM Pixel Pitbull">
-                    <div>
-                        Every fall we host a 12-hour hackathon. It's open to everyone and is a fantastic opportunity to build something meaningful and
-                        learn something new in a low-stakes environment. Participants have the opportunity to present their creations at the end of the
-                        event to a panel of judges to improve their professional presentation pitching skills and possibly win a prize.
-                        There is free food and T-shirts for everyone!
-                    </div>
-                </div>
-    
-                <div class="event-text">
-                    <h3 class="event-title">Cybercup</h3>
-                    <img class="event-img" src="./images/cybercup.svg" alt="Spokane Mayors Cup Capture the Flag Cybersecurity Competition">
-                    <a class="event-text" href="https://spokanectf.github.io/">https://spokanectf.github.io/</a>
-                    <div>
-                        The Spokane Mayors Cup Cybersecurity Competition is held every spring at GU. 
-                        Participants compete in a capture-the-flag style event where they complete challenges
-                        to find keys and accumulate points. Free food provided!
-                    </div>
-                </div>
-            </div>
+        <div class="hero">
 
+            <div id="calendar"></div>
+        
         </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+        <script src="./evo-calendar.min.js"></script>
+        
+        <script>
+        $(document).ready(function() {
+            $('#calendar').evoCalendar({
+               
+                theme: "Midnight Blue",
+               
+                calendarEvents: [
+              {
+                id: 'event1', // Event's ID (required)
+                name: "Team meeting", // Event name (required)
+                date: "April/12/2023", // Event date (required)
+                type: "holiday", // Event type (required)
+                everyYear: false // Same event every year (optional)
+              },
+              {
+                name: "Vacation Leave",
+                badge: "02/13 - 02/15", // Event badge (optional)
+                date: ["February/13/2020", "February/15/2020"], // Date range
+                description: "Vacation leave for 3 days.", // Event description (optional)
+                type: "event",
+                color: "#63d867" // Event custom color (optional)
+              },
+              {
+                id: 'event2', // Event's ID (required)
+                name: "TEST", // Event name (required)
+                date: "June/10/2023", // Event date (required)
+                type: "birthday", // Event type (required)
+                everyYear: true // Same event every year (optional)
+              },
+              {
+                id: 'event3', // Event's ID (required)
+                name: "Kevin's Birthday", // Event name (required)
+                date: "April/24/2023", // Event date (required)
+                type: "birthday", // Event type (required)
+                everyYear: true // Same event every year (optional)
+              }
+            ]
+            })
+        })
+        
+        </script> 
     </body>
+
+    <!-- <footer>
+
+    </footer> -->
 </html>
