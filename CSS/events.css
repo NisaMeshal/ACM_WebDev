@@ -3,7 +3,7 @@
 html {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 100%;
 }
 
 .events {
@@ -13,7 +13,7 @@ html {
 }
 
 .event-title {
-    font-size: 2rem;
+    font-size: 200%;
     text-align: center;
 }
 
@@ -24,7 +24,7 @@ html {
     align-items: center;
     justify-content: baseline;
     flex-direction: column;
-    padding: 2rem;
+    padding: 2%;
     text-decoration: none;
     color: white;
 }
@@ -36,16 +36,16 @@ html {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    padding: 2rem;
+    padding: 2%;
     text-decoration: none;
     color: white;
     flex-wrap: wrap;
 }
 
 .event-img {
-    width: 25rem;
+    width: 70%;
 }
 
 .event-logo {
-    width: 10rem;
+    width: 35%;
 }
