@@ -1,7 +1,7 @@
 .abt {
     background-color: #1a0b2b;
-        position: relative;
-        top: 100vh;
+    position: relative;
+    top: 100vh;
     color: white;
 }
 
@@ -11,8 +11,8 @@
 }
 
 .content-container {
-    display:flex;
-    flex-direction:row;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     height: auto;
@@ -30,5 +30,5 @@
 }
 
 img {
-  width: 500px;
+    width: 500px;
 }
