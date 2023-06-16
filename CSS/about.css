@@ -1,7 +1,7 @@
 .about {
     background-color: #1a0b2b;
-    position: relative;
-    top: 100vh;
+        position: relative;
+        top: 100vh;
     color: white;
 }
 
@@ -10,7 +10,7 @@
     text-align: center;
 }
 
-#about-content {
+.content-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -32,8 +32,10 @@
     padding: 3rem;
 }
 
-.about-img {
-  display: none;
-  width: 500px;
-  border-radius: 10px;
+.pitbull {
+    flex-basis: 50%;
+}
+
+img {
+    width: 500px;
 }
