@@ -1,14 +1,20 @@
 <!DOCTYPE html>
-<html>
-    <header>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <title>GU ACM</title>
         <link rel="stylesheet" type="text/css" href="./CSS/navbar.css">
         <link rel="stylesheet" type="text/css" href="./CSS/about.css">
         <link rel="stylesheet" href="./CSS/landing_page.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
-    </header>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@300;600&display=swap"
+            rel="stylesheet">
+        <script src="JS/carousel.js" defer></script>
+    </head>
 
     <body>
         <nav>
@@ -30,11 +36,11 @@
              </h2>
          </div>
 
-        <div class="abt">
-            <h1 id="about" class="header-title" name="about">About</h1>
+        <div class="about">
+            <h1 id="about-title" name="about-title">About</h1>
             
-            <div class="content-container">
-                <div class="text">
+            <div id="about-content">
+                <div id="about-text">
                     We are the Gonzaga student chapter of the national ACM
                     organization. We hold club meetings that cover various
                     industry topic throughout the academic year. At our
@@ -45,15 +51,19 @@
                     to our contacts section.
                 </div>
             
-                <div class="pitbull">
-                    <!-- <img src="./images/pixel_pitbull.png" alt="Hackathon team"> -->
-                    <img src="./images/everyone.JPG" alt="Hackathon team">
+                <div id="about-carousel">
+                    <img class="about-img" src="./images/slideImage1.JPG" 
+                        alt="Hackathon Winning Team">
+                    <img class="about-img" src="./images/slideImage2.JPG" 
+                        alt="Students Working 1">
+                    <img class="about-img" src="./images/slideImage3.JPG" 
+                        alt="Students Working 2">
+                    <img class="about-img" src="./images/slideImage4.JPG" 
+                        alt="Students Working 3">
+                    <img class="about-img" src="./images/slideImage5.JPG" 
+                        alt="Students Working 4"> 
                 </div>
             </div>
         </div>
     </body>
-
-    <footer>
-
-    </footer>
 </html>
