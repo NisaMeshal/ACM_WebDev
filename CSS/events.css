@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Share+Tech&display=swap');
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 100%;
+}
+
+.events {
+    background-color: #1a0b2b;
+    font-family: "Share Tech", sans-serif;
+    color: white;
+}
+
+.event-title {
+    font-size: 200%;
+    text-align: center;
+}
+
+.event-text {
+    flex-basis: 50%;
+    font-family: "Share Tech", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    flex-direction: column;
+    padding: 2%;
+    text-decoration: none;
+    color: white;
+}
+
+.leetcode {
+    flex-basis: 50%;
+    font-family: "Share Tech", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 2%;
+    text-decoration: none;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.event-img {
+    width: 70%;
+}
+
+.event-logo {
+    width: 35%;
+}

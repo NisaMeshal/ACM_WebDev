@@ -27,7 +27,16 @@ nav {
     margin-top: 0;
 }
 
-nav a {
+.navLink {
+    text-decoration: none;
+    font-family: "Share Tech", sans-serif;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 25px;
+    color: white;
+}
+
+.contact {
     text-decoration: none;
     font-family: "Share Tech", sans-serif;
     padding-left: 5%;
