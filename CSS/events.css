@@ -7,9 +7,14 @@ html {
 }
 
 .events {
+    /* position: relative; */
     background-color: #1a0b2b;
     font-family: "Share Tech", sans-serif;
     color: white;
+}
+
+.header-title {
+    font-size: 3rem;
 }
 
 .event-title {
