@@ -10,7 +10,7 @@
     text-align: center;
 }
 
-.content-container {
+#about-content {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -32,10 +32,8 @@
     padding: 3rem;
 }
 
-.pitbull {
-    flex-basis: 50%;
-}
-
-img {
+.about-img {
+    display: none;
     width: 500px;
+    border-radius: 10px;
 }

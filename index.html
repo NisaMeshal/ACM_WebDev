@@ -1,176 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>GU ACM</title>
-    <link rel="stylesheet" type="text/css" href="./CSS/navbar.css">
+
+    <!-- External CSS -->
     <link rel="stylesheet" type="text/css" href="./CSS/about.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/calendar.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/events.css">
+    <link rel="stylesheet" href="./CSS/evo-calendar.min.css">
+    <link rel="stylesheet" href="./CSS/evo-calendar.midnight-blue.min.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/footer.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/landing_page.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/navbar.css">
     <link rel="stylesheet" type="text/css" href="./CSS/officers.css">
-    <link rel="stylesheet" href="./CSS/landing_page.css">
-    <link rel="stylesheet" href="./CSS/footer.css">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./CSS/calendar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@300;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="./CSS/evo-calendar.min.css">
-    <link rel="stylesheet" href="./CSS/evo-calendar.midnight-blue.min.css">   
+
+    <!-- JS libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+    <!-- External JS -->
+    <script src="JS/carousel.js" defer></script>
+    <script src="./evo-calendar.min.js"></script>
 </head>
 
-    <body>
+<body>
 
-        <nav>
-            <a class="navLink" href="index.html">Home</a>
-            <a class="navLink" href="https://forms.gle/Hy459wvUAsWXsnf46 ">Register</a>
-            <a class="navLink" href="#about">About</a>
-            <a class="navLink" href="#schedule">Schedule</a>
-            <a class="navLink" href="#events">Events</a>
-            <a class="contact" href="#contact">Contact Us!</a>
-        </nav>
+    <nav>
+        <a class="navLink" href="index.html">Home</a>
+        <a class="navLink" href="https://forms.gle/Hy459wvUAsWXsnf46 ">Register</a>
+        <a class="navLink" href="#about">About</a>
+        <a class="navLink" href="#schedule">Schedule</a>
+        <a class="navLink" href="#events">Events</a>
+        <a class="contact" href="#contact">Contact Us!</a>
+    </nav>
 
-        <div class="landing">
-             <h1>
-                 Gonzaga ACM 
-             </h1>
-             <h2>
-                 Student Chapter
-             </h2>
-         </div>
-    
-        <div class="abt">
-            <h1 id="about" class="header-title" name="about">About</h1>
+    <div class="landing">
+        <h1>Gonzaga ACM</h1>
+        <h2>Student Chapter</h2>
+    </div>
 
-            <div class="content-container">
-                <div class="text">
-                    We are the Gonzaga student chapter of the national ACM
-                    organization. We hold club meetings that cover various
-                    industry topic throughout the academic year. At our
-                    meetings you can find us hosting guest speakers, sharing
-                    career advice, providing homework help, and many other
-                    things! We also host the annual GU Hackathon in the Fall.
-                    Interested in joining or want to have a chat? Head over
-                    to our contacts section.
-                </div>
+    <div class="about">
+        <h1 id="about-title" name="about-title">About</h1>
 
-                <div class="pitbull">
-                    <!-- <img src="./images/pixel_pitbull.png" alt="Hackathon team"> -->
-                    <img src="./images/everyone.JPG" alt="Hackathon team">
-                </div>
+        <div id="about-content">
+            <div id="about-text">
+                We are the Gonzaga student chapter of the national ACM
+                organization. We hold club meetings that cover various
+                industry topic throughout the academic year. At our
+                meetings you can find us hosting guest speakers, sharing
+                career advice, providing homework help, and many other
+                things! We also host the annual GU Hackathon in the Fall.
+                Interested in joining or want to have a chat? Head over
+                to our contacts section.
+            </div>
+
+            <div id="about-carousel">
+                <img class="about-img" src="./images/slideImage1.JPG" alt="Hackathon Winning Team">
+                <img class="about-img" src="./images/slideImage2.JPG" alt="Students Working 1">
+                <img class="about-img" src="./images/slideImage3.JPG" alt="Students Working 2">
+                <img class="about-img" src="./images/slideImage4.JPG" alt="Students Working 3">
+                <img class="about-img" src="./images/slideImage5.JPG" alt="Students Working 4">
             </div>
         </div>
+    </div>
 
-        <div class="hero">
-            <div id="calendar"></div>
-        </div>
-            
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-        <script src="./evo-calendar.min.js"></script>
-            
-        <script>
-            $(document).ready(function() {
-                $('#calendar').evoCalendar({
-                
-                    theme: "Midnight Blue",
-                
-                    calendarEvents: [
-                {
-                    id: 'event1', // Event's ID (required)
-                    name: "Team meeting", // Event name (required)
-                    date: "April/12/2023", // Event date (required)
-                    type: "holiday", // Event type (required)
-                    everyYear: false // Same event every year (optional)
-                },
-                {
-                    name: "Vacation Leave",
-                    badge: "02/13 - 02/15", // Event badge (optional)
-                    date: ["February/13/2020", "February/15/2020"], // Date range
-                    description: "Vacation leave for 3 days.", // Event description (optional)
-                    type: "event",
-                    color: "#63d867" // Event custom color (optional)
-                },
-                {
-                    id: 'event2', // Event's ID (required)
-                    name: "TEST", // Event name (required)
-                    date: "June/10/2023", // Event date (required)
-                    type: "birthday", // Event type (required)
-                    everyYear: true // Same event every year (optional)
-                },
-                {
-                    id: 'event3', // Event's ID (required)
-                    name: "Kevin's Birthday", // Event name (required)
-                    date: "April/24/2023", // Event date (required)
-                    type: "birthday", // Event type (required)
-                    everyYear: true // Same event every year (optional)
-                }
+    <div class="hero">
+        <div id="calendar"></div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('#calendar').evoCalendar({
+
+                theme: "Midnight Blue",
+
+                calendarEvents: [
+                    {
+                        id: 'event1', // Event's ID (required)
+                        name: "Team meeting", // Event name (required)
+                        date: "April/12/2023", // Event date (required)
+                        type: "holiday", // Event type (required)
+                        everyYear: false // Same event every year (optional)
+                    },
+                    {
+                        name: "Vacation Leave",
+                        badge: "02/13 - 02/15", // Event badge (optional)
+                        date: ["February/13/2020", "February/15/2020"], // Date range
+                        description: "Vacation leave for 3 days.", // Event description (optional)
+                        type: "event",
+                        color: "#63d867" // Event custom color (optional)
+                    },
+                    {
+                        id: 'event2', // Event's ID (required)
+                        name: "TEST", // Event name (required)
+                        date: "June/10/2023", // Event date (required)
+                        type: "birthday", // Event type (required)
+                        everyYear: true // Same event every year (optional)
+                    },
+                    {
+                        id: 'event3', // Event's ID (required)
+                        name: "Kevin's Birthday", // Event name (required)
+                        date: "April/24/2023", // Event date (required)
+                        type: "birthday", // Event type (required)
+                        everyYear: true // Same event every year (optional)
+                    }
                 ]
-                })
             })
-        </script>
+        })
+    </script>
 
-        <div class="officers_head">
-            <h2>Meet the Officers!</h2>
+    <div class="events" id="events">
+        <h1 id="about" class="header-title" name="about">Events</h1>
+
+        <div class="content-container">
+            <div class="leetcode">
+                <h3 class="event-title">Leetcode</h3>
+                <div>
+                    We often do Leetcode problems together at our meetings.
+                    Leetcode is an excellent way to improve the skills employers
+                    look for in technical interviews.
+                </div>
+            </div>
+
+            <div class="event-text">
+                <h3 class="event-title">Hackathon</h3>
+                <img class="event-logo" src="./images/pixel_pitbull.png" alt="GU ACM Pixel Pitbull">
+                <div>
+                    Every fall we host a 12-hour hackathon. It's open to everyone and is a fantastic opportunity to
+                    build
+                    something meaningful and
+                    learn something new in a low-stakes environment. Participants have the opportunity to present their
+                    creations at the end of the
+                    event to a panel of judges to improve their professional presentation pitching skills and possibly
+                    win a
+                    prize.
+                    There is free food and T-shirts for everyone!
+                </div>
+            </div>
+
+            <div class="event-text">
+                <h3 class="event-title">Cybercup</h3>
+                <img class="event-img" src="./images/cybercup.svg"
+                    alt="Spokane Mayors Cup Capture the Flag Cybersecurity Competition">
+                <a class="event-text" href="https://spokanectf.github.io/">https://spokanectf.github.io/</a>
+                <div>
+                    The Spokane Mayors Cup Cybersecurity Competition is held every spring at GU.
+                    Participants compete in a capture-the-flag style event where they complete challenges
+                    to find keys and accumulate points. Free food provided!
+                </div>
+            </div>
         </div>
-        <section class="officers">
-            <br>
-            <div class="row_officers">
-                <div class="column_officers">
-                    <div class="card_officers">
-                        <img src="/images/nisa.jpg" class="officer_images" alt="Nisa" style="width:100%">
-                        <div class="container_officers">
-                            <h2>Nisa Meshal</h2>
-                            <p>President</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row_officers">
-                <div class="column_officers">
-                    <div class="card_officers">
-                        <img src="/images/sam.jpeg" class="officer_images" alt="Sam" style="width:100%">
-                        <div class="container_officers">
-                            <h2>Sam Carter</h2>
-                            <p>Vice President</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row_officers">
-                <div class="column_officers">
-                    <div class="card_officers">
-                        <img src="/images/abby.jpg" class="officer_images" alt="Abby" style="width:100%">
-                        <div class="container_officers">
-                            <h2>Abby Hidalgo</h2>
-                            <p>Treasurer</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row_officers">
-                <div class="column_officers">
-                    <div class="card_officers">
-                        <img src="/images/aidan.jpg" class="officer_images" alt="Aidan" style="width:100%">
-                        <div class="container_officers">
-                            <h2>Aidan Kaiser</h2>
-                            <p>Secretary</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    </div>
 
-        <footer class="footer">
-            <br>
-            <hr>
-
-            <div class="imagesfooteralign">
-                <h3 class="footerheader">To get in touch, reach out with one of the following methods!</h3>
-                <a href="https://www.instagram.com/gu_compsci/"> <img src="./images/instagram.jpg" class="footerimg"></a>
-                <a href="https://www.discord.gg/YCyg8FgQjn"> <img src="./images/discord.jpg" class="footerimg"></a>
-                <a href="mailto: guacm@gonzaga.edu"> <img src="./images/mail.jpg" class="footerimg"></a>
+    <div class="officers_head">
+        <h2>Meet the Officers!</h2>
+    </div>
+    <section class="officers">
+        <br>
+        <div class="row_officers">
+            <div class="column_officers">
+                <div class="card_officers">
+                    <img src="/images/nisa.jpg" class="officer_images" alt="Nisa" style="width:100%">
+                    <div class="container_officers">
+                        <h2>Nisa Meshal</h2>
+                        <p>President</p>
+                    </div>
+                </div>
             </div>
-        </footer>
-    </body>
+        </div>
+        <div class="row_officers">
+            <div class="column_officers">
+                <div class="card_officers">
+                    <img src="/images/sam.jpeg" class="officer_images" alt="Sam" style="width:100%">
+                    <div class="container_officers">
+                        <h2>Sam Carter</h2>
+                        <p>Vice President</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row_officers">
+            <div class="column_officers">
+                <div class="card_officers">
+                    <img src="/images/abby.jpg" class="officer_images" alt="Abby" style="width:100%">
+                    <div class="container_officers">
+                        <h2>Abby Hidalgo</h2>
+                        <p>Treasurer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row_officers">
+            <div class="column_officers">
+                <div class="card_officers">
+                    <img src="/images/aidan.jpg" class="officer_images" alt="Aidan" style="width:100%">
+                    <div class="container_officers">
+                        <h2>Aidan Kaiser</h2>
+                        <p>Secretary</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <br>
+        <hr>
+
+        <div class="imagesfooteralign">
+            <h3 class="footerheader">To get in touch, reach out with one of the following methods!</h3>
+            <a href="https://www.instagram.com/gu_compsci/"> <img src="./images/instagram.jpg" class="footerimg"></a>
+            <a href="https://www.discord.gg/YCyg8FgQjn"> <img src="./images/discord.jpg" class="footerimg"></a>
+            <a href="mailto: guacm@gonzaga.edu"> <img src="./images/mail.jpg" class="footerimg"></a>
+        </div>
+    </footer>
+</body>
+
 </html>
