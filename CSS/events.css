@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Share+Tech&display=swap');
 
-html {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    font-size: 100%;
-}
-
 .events {
     position: relative;
     top: 100vh;
@@ -16,6 +10,7 @@ html {
 
 .header-title {
     font-size: 3rem;
+    text-align: center;
 }
 
 .event-title {
