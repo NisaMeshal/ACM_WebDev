@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css?family=Share+Tech&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar css start */
+
+nav {
+  background-color: #1a0b2b;
+  float: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  height: 3rem;
+  padding-top: 0;
+  padding-left: 70%;
+  padding-right: 10%;
+  margin-top: 0;
+}
+
+.navLink {
+  text-decoration: none;
+  font-family: "Share Tech", sans-serif;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 25px;
+  color: white;
+}
+
+.contact {
+  text-decoration: none;
+  font-family: "Share Tech", sans-serif;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 25px;
+  color: white;
+}
+
+nav img {
+  position: absolute;
+  left: 0;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a:active {
+  color: black;
+}
+
+/* Navbar css end, landing page start */
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes text_motion {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+
+  100% {
+    left: 100%;
+    top: 100%;
+  }
+}
+
+.landing {
+  background-attachment: fixed;
+  background-image: linear-gradient(30deg, #02977c, rgb(2, 94, 94), #351b7c, rgb(12, 1, 55), rgb(6, 1, 27));
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.landing h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 150px;
+  margin-top: 40vh;
+  text-shadow: 2px 2px #1af2e3, -2px -2px rgb(234, 17, 216);
+}
+
+.landing h2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 65px;
+  margin-top: -2vh;
+  margin-left: 335px;
+  text-shadow: 1px 1px #1af2e3, -1px -1px rgb(234, 17, 216);
+}
+
+/* landing page end, about start */
+
+.about {
+  background-color: #1a0b2b;
+  position: relative;
+  top: 100vh;
+  font-family: "Share Tech", sans-serif;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+#about-title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#about-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+#about-text {
+  padding: 2rem;
+  border: 2px solid #f50057;
+  border-radius: 10px;
+  flex-basis: 50%;
+  max-width: 60rem;
+  min-width: 30rem;
+  font-size: 1.125rem;
+  margin-right: 1rem;
+}
+
+#about-text ul {
+  position: relative;
+}
+
+#about-text ul li {
+  position: relative;
+  left: 0;
+  list-style: none;
+  margin: 4px 0;
+  border-left: 2px solid #f50057;
+  transition: 0.5s;
+}
+
+#about-text ul li:hover {
+  left: 10px;
+  border-radius: 10px;
+}
+
+#about-text ul li span {
+  position: relative;
+  padding: 8px;
+  padding-left: 12px;
+  display: inline-block;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+#about-text ul li:hover span {
+  color: #111;
+}
+
+#about-text ul li:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #f50057;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+#about-text ul li:hover:before {
+  transform: scaleX(1);
+  border-radius: 10px;
+}
+
+#about-carousel {
+  padding: 1rem;
+  margin-left: 1rem;
+}
+
+.about-img {
+  display: none;
+  width: 575px;
+  border-radius: 10px;
+}
+
+/* about end, calendar start */
+
+.hero {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 100vh;
+  background: #1a0b2b;
+}
+
+#calendar {
+  width: 80%;
+  height: 65vh;
+  position: relative;
+}
+
+/* calendar end, events start */
+
+.events {
+  position: relative;
+  top: 100vh;
+  background-color: #1a0b2b;
+  font-family: "Share Tech", sans-serif;
+  color: white;
+}
+
+.header-title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.event-title {
+  font-size: 200%;
+  text-align: center;
+}
+
+.event-text {
+  flex-basis: 50%;
+  font-family: "Share Tech", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  flex-direction: column;
+  padding: 2%;
+  text-decoration: none;
+  color: white;
+}
+
+.leetcode {
+  flex-basis: 50%;
+  font-family: "Share Tech", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 2%;
+  text-decoration: none;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.event-img {
+  width: 70%;
+}
+
+.event-logo {
+  width: 35%;
+}
+
+/* events end, officers start */
+
+.officers_head {
+  position: relative;
+  top: 100vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-attachment: fixed;
+  background-image: linear-gradient(30deg, #02977c, rgb(2, 94, 94), #351b7c, rgb(12, 1, 55), rgb(6, 1, 27));
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
+  color: white;
+  text-align: center;
+  font-size: 23px;
+  height: 70px;
+  line-height: 270%;
+}
+
+.officers {
+  position: relative;
+  top: 100vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  background-attachment: fixed;
+  background-image: linear-gradient(30deg, #02977c, rgb(2, 94, 94), #351b7c, rgb(12, 1, 55), rgb(6, 1, 27));
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
+  color: black;
+}
+
+.officer_images {
+  display: flex;
+  border-radius: 8%;
+  margin-top: 5px;
+}
+
+.column_officers {
+  width: 90%;
+  margin-left: 10px;
+  float: left;
+  margin-bottom: 10px;
+  margin-top: 16px;
+  padding: 0 8px;
+  text-align: center;
+  line-height: 180%;
+  border-radius: 8%;
+  background-color: #F8F0E3;
+}
+
+/* Add some shadows to create a card effect */
+.card_officers {
+  box-shadow: 0px 10px 20px 30px rgba(0, 0, 0, 0.30);
+  box-shadow: 8px 0px 10px 10px rgba(0, 0, 0, 0.30);
+  box-shadow: -8px 0px 10px 10px rgba(0, 0, 0, 0.30);
+  border-radius: 8%;
+}
+
+.card_officers:hover {
+  box-shadow: 0px 0px 40px 30px rgba(255, 255, 255, 0.15);
+  border-radius: 8%;
+}
+
+/* Some left and right padding inside the container */
+.container_officers {
+  padding: 0 16px;
+}
+
+/* officers end, footer start */
+
+.footer {
+  position: relative;
+  top: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-image: linear-gradient(30deg, #02977c, rgb(2, 94, 94), #351b7c, rgb(12, 1, 55), rgb(6, 1, 27));
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
+  color: white;
+}
+
+.footerheader {
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  line-height: 300%;
+}
+
+.imagesfooteralign {
+  text-align: center;
+}
+
+.footerimg {
+  font-size: 10px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  border: solid;
+  border-color: black;
+  border-width: 1.5px;
+  zoom: 150%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.form-control::placeholder {
+  font-size: 0.95rem;
+  color: #aaa;
+  font-style: italic;
+}
+
+.form-control.shadow-0:focus {
+  box-shadow: none;
+}
+
+/* footer end */
